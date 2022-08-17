@@ -1,3 +1,6 @@
+use rand::Rng;
+
 fn main() {
-    println!("Hello, world!");
+    let roll = rand::thread_rng().gen_range(1..=6);
+    println!("Roll: {roll}");
 }
